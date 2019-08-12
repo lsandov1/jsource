@@ -1,0 +1,8 @@
+gcc -c  -fPIC -O1 -fwrapv -fno-strict-aliasing -ftree-vectorize -fopt-info-vec-missed -Wextra -Wno-maybe-uninitialized -Wno-unused-parameter -Wno-sign-compare -Wno-clobbered -Wno-empty-body -Wno-unused-value -Wno-pointer-sign -Wno-parentheses -Wno-shift-negative-value -Wno-implicit-fallthrough -Wno-cast-function-type     -otsdll.o /home/lsandov1/repos/jsource/jsrc/tsdll.c
+/home/lsandov1/repos/jsource/jsrc/tsdll.c:98:2: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/tsdll.c:100:6: missed: not vectorized: complicated access pattern.
+/home/lsandov1/repos/jsource/jsrc/tsdll.c:109:2: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/tsdll.c:111:6: missed: not vectorized: complicated access pattern.
+/home/lsandov1/repos/jsource/jsrc/tsdll.c:120:2: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/tsdll.c:122:6: missed: not vectorized: complicated access pattern.
+gcc  tsdll.o     -shared -Wl,-soname,libtsdll.so -o libtsdll.so -lm 

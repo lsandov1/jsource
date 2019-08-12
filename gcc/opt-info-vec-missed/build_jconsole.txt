@@ -1,0 +1,499 @@
+gcc -c  -fPIC -O1 -fwrapv -fno-strict-aliasing -ftree-vectorize -fopt-info-vec-missed -Wextra -Wno-maybe-uninitialized -Wno-unused-parameter -Wno-sign-compare -Wno-clobbered -Wno-empty-body -Wno-unused-value -Wno-pointer-sign -Wno-parentheses -Wno-shift-negative-value -Wno-implicit-fallthrough -Wno-cast-function-type -DREADLINE -DUSE_LINENOISE    -ojconsole.o /home/lsandov1/repos/jsource/jsrc/jconsole.c
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:28:42: missed: statement clobbers memory: signal (2, sigint);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:100:44: missed: statement clobbers memory: write_history.1_3 (&histfile);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:166:3: missed: statement clobbers memory: jefree ();
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:168:12: missed: statement clobbers memory: rlexit (_3);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:170:3: missed: statement clobbers memory: exit (_5);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:172:2: missed: statement clobbers memory: fputs (s_11(D), stdout.22_6);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:173:2: missed: statement clobbers memory: fflush (stdout.23_7);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:110:5: missed: statement clobbers memory: s_20 = getenv ("HOME");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:113:4: missed: statement clobbers memory: strcpy (&histfile, s_20);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:115:6: missed: statement clobbers memory: _25 = __builtin_strlen (&histfile);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:115:6: missed: statement clobbers memory: __builtin_memcpy (_26, "/.jhistory", 11);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:116:6: missed: statement clobbers memory: using_history.4_3 ();
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:118:6: missed: statement clobbers memory: _22 = __builtin_strlen (&histfile);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:118:6: missed: statement clobbers memory: __builtin_memcpy (_23, "/.jshistory", 12);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:119:4: missed: statement clobbers memory: read_history.5_4 (&histfile);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:122:11: missed: statement clobbers memory: free (line.6_5);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:123:9: missed: statement clobbers memory: _7 = readline.8_6 (prompt_31(D));
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:125:12: missed: statement clobbers memory: add_history.11_9 (_7);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:132:6: missed: statement clobbers memory: _2 = fileno (stdin.13_1);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:132:6: missed: statement clobbers memory: _3 = isatty (_2);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:133:2: missed: statement clobbers memory: fputs (prompt_13(D), stdout.14_4);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:134:2: missed: statement clobbers memory: fflush (stdout.15_5);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:136:6: missed: statement clobbers memory: _7 = fgets (&input, 30000, stdin.16_6);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:154:15: missed: statement clobbers memory: _3 = fileno (stdin.18_2);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:154:15: missed: statement clobbers memory: _4 = isatty (_3);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:155:14: missed: statement clobbers memory: _13 = Jinput_rl (prompt_11(D));
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:158:13: missed: statement clobbers memory: _15 = Jinput_stdio (prompt_11(D));
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:183:25: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:183:25: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:188:8: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:188:8: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:180:10: missed: statement clobbers memory: _1 = strlen (d_26(D));
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:183:25: missed: statement clobbers memory: _2 = strlen (d_26(D));
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:183:37: missed: statement clobbers memory: _7 = strlen (_6);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:183:55: missed: statement clobbers memory: exit (100);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:289:11: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:289:11: missed: not vectorized: multiple exits.
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:231:3: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:233:16: missed: not vectorized: not suitable for gather load _44 = *_40;
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:204:15: missed: statement clobbers memory: _2 = strcmp (_1, "-lib");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:205:20: missed: statement clobbers memory: _6 = strcmp (_5, "-lib");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:205:45: missed: statement clobbers memory: _8 = strcmp (_7, "-norl");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:206:20: missed: statement clobbers memory: _10 = strcmp (_9, "-norl");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:208:16: missed: statement clobbers memory: _12 = strcmp (_11, "-norl");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:209:22: missed: statement clobbers memory: _15 = strcmp (_14, "-norl");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:210:16: missed: statement clobbers memory: _17 = strcmp (_16, "-lib");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:212:2: missed: statement clobbers memory: jepath (_22, iftmp.35_71, 0);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:214:16: missed: statement clobbers memory: _24 = strcmp (_23, "-norl");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:216:17: missed: statement clobbers memory: _26 = strcmp (_25, "-lib");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:220:22: missed: statement clobbers memory: _30 = strcmp (_29, "-lib");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:224:18: missed: statement clobbers memory: _34 = strcmp (_33, "-norl");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:226:19: missed: statement clobbers memory: _36 = strcmp (_35, "-norl");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:241:6: missed: statement clobbers memory: _46 = getrlimit (3, &lim);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:244:4: missed: statement clobbers memory: setrlimit (3, &lim);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:249:13: missed: statement clobbers memory: _51 = fileno (stdin.39_50);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:249:13: missed: statement clobbers memory: _52 = isatty (_51);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:61:17: missed: statement clobbers memory: _128 = dlopen ("libedit.so.3", 1);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:62:17: missed: statement clobbers memory: _129 = dlopen ("libedit.so.2", 1);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:63:18: missed: statement clobbers memory: _130 = dlopen ("libedit.so.1", 1);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:64:19: missed: statement clobbers memory: _131 = dlopen ("libedit.so.0", 1);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:78:27: missed: statement clobbers memory: _133 = dlsym (hreadline.56_132, "add_history");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:79:29: missed: statement clobbers memory: _136 = dlsym (hreadline.56_132, "read_history");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:80:31: missed: statement clobbers memory: _139 = dlsym (hreadline.56_132, "write_history");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:81:22: missed: statement clobbers memory: _142 = dlsym (hreadline.56_132, "readline");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:82:31: missed: statement clobbers memory: _145 = dlsym (hreadline.56_132, "using_history");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:253:5: missed: statement clobbers memory: _54 = jeload (&callbacks);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:254:24: missed: statement clobbers memory: jefail (&m);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:254:35: missed: statement clobbers memory: fputs (&m, stderr.41_55);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:254:52: missed: statement clobbers memory: exit (1);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:261:3: missed: statement clobbers memory: sigemptyset (&sa.sa_mask);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:262:3: missed: statement clobbers memory: sigaddset (&sa.sa_mask, 2);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:263:3: missed: statement clobbers memory: sigaction (2, &sa, 0B);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:266:3: missed: statement clobbers memory: signal (2, sigint);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:272:18: missed: statement clobbers memory: linenoiseSetMultiLine (1);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:277:15: missed: statement clobbers memory: _60 = strcmp (_59, "-jprofile");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:279:19: missed: statement clobbers memory: _62 = strcmp (_61, "-jprofile");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:283:26: missed: statement clobbers memory: _63 = strlen (&input);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:283:2: missed: statement clobbers memory: addargv (argc_67, argv_88(D), _64);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:288:2: missed: statement clobbers memory: jefirst (type_68, &input);
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:289:23: missed: statement clobbers memory: _66 = Jinput (jt.46_65, "   ");
+/home/lsandov1/repos/jsource/jsrc/jconsole.c:289:11: missed: statement clobbers memory: jedo (_66);
+gcc -c  -fPIC -O1 -fwrapv -fno-strict-aliasing -ftree-vectorize -fopt-info-vec-missed -Wextra -Wno-maybe-uninitialized -Wno-unused-parameter -Wno-sign-compare -Wno-clobbered -Wno-empty-body -Wno-unused-value -Wno-pointer-sign -Wno-parentheses -Wno-shift-negative-value -Wno-implicit-fallthrough -Wno-cast-function-type -DREADLINE -DUSE_LINENOISE    -ojeload.o /home/lsandov1/repos/jsource/jsrc/jeload.c
+/home/lsandov1/repos/jsource/jsrc/jeload.c:91:9: missed: statement clobbers memory: _6 = jdo.0_1 (jt.1_2, sentence_4(D));
+/home/lsandov1/repos/jsource/jsrc/jeload.c:94:31: missed: statement clobbers memory: _7 = jgeta.2_1 (jt.3_2, n_4(D), s_5(D));
+/home/lsandov1/repos/jsource/jsrc/jeload.c:95:45: missed: statement clobbers memory: _9 = jseta.4_1 (jt.5_2, n_4(D), name_5(D), x_6(D), d_7(D));
+/home/lsandov1/repos/jsource/jsrc/jeload.c:96:15: missed: statement clobbers memory: jfree.6_1 (jt.7_2);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:97:35: missed: statement clobbers memory: _5 = jgetlocale.8_1 (jt.9_2);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:98:35: missed: statement clobbers memory: _9 = jga.10_1 (jt.11_2, t_4(D), n_5(D), r_6(D), s_7(D));
+/home/lsandov1/repos/jsource/jsrc/jeload.c:109:8: missed: statement clobbers memory: _1 = dlopen (&pathdll, 1);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:112:17: missed: statement clobbers memory: _2 = dlsym (_1, "JInit");
+/home/lsandov1/repos/jsource/jsrc/jeload.c:112:6: missed: statement clobbers memory: _4 = _3 ();
+/home/lsandov1/repos/jsource/jsrc/jeload.c:114:12: missed: statement clobbers memory: _6 = dlsym (hjdll.15_5, "JSM");
+/home/lsandov1/repos/jsource/jsrc/jeload.c:114:3: missed: statement clobbers memory: _7 (_4, callbacks_36(D));
+/home/lsandov1/repos/jsource/jsrc/jeload.c:115:15: missed: statement clobbers memory: _10 = dlsym (hjdll.17_9, "JDo");
+/home/lsandov1/repos/jsource/jsrc/jeload.c:116:19: missed: statement clobbers memory: _13 = dlsym (hjdll.17_9, "JFree");
+/home/lsandov1/repos/jsource/jsrc/jeload.c:117:15: missed: statement clobbers memory: _16 = dlsym (hjdll.17_9, "Jga");
+/home/lsandov1/repos/jsource/jsrc/jeload.c:118:29: missed: statement clobbers memory: _19 = dlsym (hjdll.17_9, "JGetLocale");
+/home/lsandov1/repos/jsource/jsrc/jeload.c:119:19: missed: statement clobbers memory: _22 = dlsym (hjdll.17_9, "JGetA");
+/home/lsandov1/repos/jsource/jsrc/jeload.c:120:19: missed: statement clobbers memory: _25 = dlsym (hjdll.17_9, "JSetA");
+/home/lsandov1/repos/jsource/jsrc/jeload.c:250:7: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/jeload.c:250:7: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/jeload.c:231:4: missed: statement clobbers memory: _1 = readlink ("/proc/self/exe", &arg2, 4000);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:232:12: missed: statement clobbers memory: strcpy (&arg2, arg_41(D));
+/home/lsandov1/repos/jsource/jsrc/jeload.c:236:4: missed: statement clobbers memory: _2 = readlink (&arg2, &arg3, 4000);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:237:12: missed: statement clobbers memory: strcpy (&arg3, &arg2);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:240:3: missed: statement clobbers memory: strcpy (&path, &arg3);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:243:7: missed: statement clobbers memory: _4 = getcwd (&path, 1000);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:244:3: missed: statement clobbers memory: _49 = __builtin_strlen (&path);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:244:3: missed: statement clobbers memory: __builtin_memcpy (_50, "/", 2);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:245:3: missed: statement clobbers memory: strcat (&path, &arg3);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:247:6: missed: statement clobbers memory: _5 = strrchr (&path, 47);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:255:8: missed: statement clobbers memory: snk_88 = strrchr (&path, 47);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:265:11: missed: statement clobbers memory: _15 = strlen (&path);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:269:2: missed: statement clobbers memory: strcpy (&pathdll, &path);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:270:2: missed: statement clobbers memory: _59 = __builtin_strlen (&pathdll);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:270:2: missed: statement clobbers memory: __builtin_memcpy (_60, "/", 2);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:271:2: missed: statement clobbers memory: _96 = __builtin_strlen (&pathdll);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:271:2: missed: statement clobbers memory: __builtin_memcpy (_97, "libj.so", 8);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:275:2: missed: statement clobbers memory: strncpy (&pathdllpx, &pathdll, 10);
+/usr/include/sys/stat.h:455:10: missed: statement clobbers memory: _94 = __xstat (1, &pathdll, &st);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:276:25: missed: statement clobbers memory: _19 = strcmp (&pathdllpx, "/usr/bin/");
+/home/lsandov1/repos/jsource/jsrc/jeload.c:279:3: missed: statement clobbers memory: __builtin_memcpy (&_jdllver, "901", 4);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:282:3: missed: statement clobbers memory: strcat (&MEM[(void *)&jdllver + 2B], &MEM[(void *)&_jdllver + 1B]);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:283:3: missed: statement clobbers memory: __builtin_memcpy (&pathdll, "libj.so", 8);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:284:3: missed: statement clobbers memory: _71 = __builtin_strlen (&pathdll);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:284:3: missed: statement clobbers memory: __builtin_memcpy (_72, ".", 2);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:285:3: missed: statement clobbers memory: strcat (&pathdll, &jdllver);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:291:4: missed: statement clobbers memory: strcpy (&pathdll, lib_76(D));
+/home/lsandov1/repos/jsource/jsrc/jeload.c:294:4: missed: statement clobbers memory: strcpy (&pathdll, &path);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:295:4: missed: statement clobbers memory: _78 = __builtin_strlen (&pathdll);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:295:4: missed: statement clobbers memory: __builtin_memcpy (_79, "/", 2);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:296:4: missed: statement clobbers memory: strcat (&pathdll, lib_76(D));
+/home/lsandov1/repos/jsource/jsrc/jeload.c:305:2: missed: statement clobbers memory: strcpy (&pathdll, arg_4(D));
+/home/lsandov1/repos/jsource/jsrc/jeload.c:306:2: missed: statement clobbers memory: strcpy (&path, arg_4(D));
+/home/lsandov1/repos/jsource/jsrc/jeload.c:307:5: missed: statement clobbers memory: _1 = strrchr (&path, 47);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:389:7: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/jeload.c:389:7: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/jeload.c:378:7: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/jeload.c:378:7: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/jeload.c:318:26: missed: statement clobbers memory: _1 = strlen (arg_21(D));
+/home/lsandov1/repos/jsource/jsrc/jeload.c:318:14: missed: statement clobbers memory: input_23 = malloc (_2);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:330:3: missed: statement clobbers memory: _36 = __builtin_strlen (input_23);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:330:3: missed: statement clobbers memory: __builtin_memcpy (_37, "(3 : \'0!:0 y\')<BINPATH,\'", 25);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:332:3: missed: statement clobbers memory: _32 = __builtin_strlen (input_23);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:332:3: missed: statement clobbers memory: __builtin_memcpy (_33, "(3 : \'0!:0 y\')<\'/etc/j/", 24);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:333:3: missed: statement clobbers memory: strcat (input_23, &jdllver);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:336:3: missed: statement clobbers memory: _39 = __builtin_strlen (input_23);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:336:3: missed: statement clobbers memory: __builtin_memcpy (_40, "/", 2);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:337:3: missed: statement clobbers memory: _42 = __builtin_strlen (input_23);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:337:3: missed: statement clobbers memory: __builtin_memcpy (_43, "profile.ijs\'", 13);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:340:3: missed: statement clobbers memory: _29 = __builtin_strlen (input_23);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:340:3: missed: statement clobbers memory: __builtin_memcpy (_30, "(3 : \'0!:0 y\')2{ARGV", 21);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:344:3: missed: statement clobbers memory: _26 = __builtin_strlen (input_23);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:344:3: missed: statement clobbers memory: __builtin_memcpy (_27, "i.0 0", 6);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:345:2: missed: statement clobbers memory: _45 = __builtin_strlen (input_23);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:345:2: missed: statement clobbers memory: __builtin_memcpy (_46, "[ARGV_z_=:", 11);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:346:2: missed: statement clobbers memory: strcat (input_23, arg_21(D));
+/home/lsandov1/repos/jsource/jsrc/jeload.c:368:2: missed: statement clobbers memory: _49 = __builtin_strlen (input_23);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:368:2: missed: statement clobbers memory: __builtin_memcpy (_50, "[UNAME_z_=:\'Linux\'", 19);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:375:2: missed: statement clobbers memory: _52 = __builtin_strlen (input_23);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:375:2: missed: statement clobbers memory: __builtin_memcpy (_53, "[BINPATH_z_=:\'", 15);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:377:10: missed: statement clobbers memory: _4 = strlen (input_23);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:384:2: missed: statement clobbers memory: _57 = __builtin_strlen (input_23);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:384:2: missed: statement clobbers memory: __builtin_memcpy (_58, "\'", 2);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:386:2: missed: statement clobbers memory: _60 = __builtin_strlen (input_23);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:386:2: missed: statement clobbers memory: __builtin_memcpy (_61, "[LIBFILE_z_=:\'", 15);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:388:10: missed: statement clobbers memory: _6 = strlen (input_23);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:395:2: missed: statement clobbers memory: _65 = __builtin_strlen (input_23);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:395:2: missed: statement clobbers memory: __builtin_memcpy (_66, "\'", 2);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:397:4: missed: statement clobbers memory: r_69 = jedo (input_23);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:398:2: missed: statement clobbers memory: free (input_23);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:404:2: missed: statement clobbers memory: __builtin_memcpy (msg_2(D), "Load library ", 14);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:405:2: missed: statement clobbers memory: strcat (msg_2(D), &pathdll);
+/home/lsandov1/repos/jsource/jsrc/jeload.c:406:2: missed: statement clobbers memory: _5 = __builtin_strlen (msg_2(D));
+/home/lsandov1/repos/jsource/jsrc/jeload.c:406:2: missed: statement clobbers memory: __builtin_memcpy (_6, " failed.\n", 10);
+gcc -c  -fPIC -O1 -fwrapv -fno-strict-aliasing -ftree-vectorize -fopt-info-vec-missed -Wextra -Wno-maybe-uninitialized -Wno-unused-parameter -Wno-sign-compare -Wno-clobbered -Wno-empty-body -Wno-unused-value -Wno-pointer-sign -Wno-parentheses -Wno-shift-negative-value -Wno-implicit-fallthrough -Wno-cast-function-type -DREADLINE -DUSE_LINENOISE    -olinenoise.o /home/lsandov1/repos/jsource/jsrc/linenoise.c
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:340:12: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:340:12: missed: not vectorized: control flow in loop.
+/usr/include/bits/stdlib-bsearch.h:29:9: missed: couldn't vectorize loop
+/usr/include/bits/stdlib-bsearch.h:29:9: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1085:20: missed: statement clobbers memory: _3 = tcsetattr (_2, 1, &orig_termios);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1034:17: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1034:17: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1048:10: missed: statement clobbers memory: _1 = isatty (0);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1029:18: missed: statement clobbers memory: term_38 = getenv ("TERM");
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1034:17: missed: statement clobbers memory: _40 = strcmp (term_38, _24);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1056:9: missed: statement clobbers memory: atexit (linenoiseAtExit);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1060:9: missed: not vectorized: more than one data ref in stmt: raw = orig_termios;
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1076:9: missed: statement clobbers memory: _14 = tcsetattr (_13, 1, &raw);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1049:9: missed: statement clobbers memory: _4 = tcgetattr (_3, &orig_termios);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1198:9: missed: statement clobbers memory: _1 = poll (&p, 1, timeout_10(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1202:9: missed: statement clobbers memory: _2 = read (fd_7(D), &c, 1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1389:15: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1389:15: missed: not vectorized: number of iterations cannot be computed.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1342:13: missed: statement clobbers memory: c_17 = fd_read_char (fd_15(D), 50);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1349:10: missed: statement clobbers memory: c2_19 = fd_read_char (fd_15(D), 50);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1372:13: missed: statement clobbers memory: c_21 = fd_read_char (fd_15(D), 50);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1391:17: missed: statement clobbers memory: c_23 = fd_read_char (fd_15(D), 50);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1462:5: missed: statement clobbers memory: __builtin_fputc (7, stderr.75_1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1463:5: missed: statement clobbers memory: fflush (stderr.76_2);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:180:11: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:180:11: missed: not vectorized: number of iterations cannot be computed.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:178:24: missed: statement clobbers memory: _1 = strlen (str_9(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:182:17: missed: statement clobbers memory: l_14 = utf8_tounicode (str_25, &c);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:206:11: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:208:14: missed: statement clobbers memory: _12 = utf8_tounicode (s_19, &c);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:208:14: missed: statement clobbers memory: _12 = utf8_tounicode (s_19, &c);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1434:17: missed: statement clobbers memory: i_13 = utf8_index (_10, pos_7(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1435:15: missed: statement clobbers memory: utf8_tounicode (_4, &c);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1228:31: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1228:31: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1220:9: missed: statement clobbers memory: _2 = read (_1, &buf[0], 1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1223:9: missed: statement clobbers memory: n_16 = utf8_charlen (_4);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1228:13: missed: statement clobbers memory: _7 = read (_6, _5, 1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1233:5: missed: statement clobbers memory: utf8_tounicode (&buf, &c);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:357:9: missed: statement clobbers memory: _2 = utf8_in_range (&unicode_range_combining, 125, ch_5(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:360:9: missed: statement clobbers memory: _3 = utf8_in_range (&unicode_range_wide, 104, ch_5(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:193:11: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:195:17: missed: statement clobbers memory: l_11 = utf8_tounicode (str_22, &c);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:195:17: missed: statement clobbers memory: l_11 = utf8_tounicode (str_22, &c);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:196:18: missed: statement clobbers memory: _13 = utf8_width (c.6_1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1448:16: missed: statement clobbers memory: _6 = utf8_width (ch_3(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:516:31: missed: statement clobbers memory: sb_3 = malloc (24);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:530:3: missed: statement clobbers memory: free (_1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:532:2: missed: statement clobbers memory: free (sb_3(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:537:21: missed: statement clobbers memory: _3 = realloc (_2, _1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:549:3: missed: statement clobbers memory: sb_realloc (sb_24(D), _5);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:551:2: missed: statement clobbers memory: memcpy (_10, str_27(D), _6);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:557:15: missed: statement clobbers memory: _33 = utf8_strlen (str_27(D), len_25(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:543:30: missed: statement clobbers memory: _1 = strlen (str_4(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:543:2: missed: statement clobbers memory: sb_append_len (sb_5(D), str_4(D), _2);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1109:15: missed: statement clobbers memory: _1 = strlen (buf_9(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1112:9: missed: statement clobbers memory: sb_append_len (_2, buf_9(D), len_5);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1115:9: missed: statement clobbers memory: write (_4, buf_9(D), _3);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1258:18: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1258:18: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1251:5: missed: statement clobbers memory: __assert_fail ("current->output == NULL", "/home/lsandov1/repos/jsource/jsrc/linenoise.c", 1251, &__PRETTY_FUNCTION__);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1254:5: missed: statement clobbers memory: outputChars (current_10(D), "\x1b[6n", -1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1259:17: missed: statement clobbers memory: _2 = parseEscapeSequence (&parser, ch_15);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1258:18: missed: statement clobbers memory: ch_15 = fd_read_char (_5, 100);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1127:5: missed: statement clobbers memory: __builtin_va_start (&args, 0);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1128:9: missed: statement clobbers memory: n_5 = vsnprintf (&buf, 64, format_3(D), &args);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1130:5: missed: statement clobbers memory: __assert_fail ("n < (int)sizeof(buf)", "/home/lsandov1/repos/jsource/jsrc/linenoise.c", 1130, &__PRETTY_FUNCTION__);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1131:5: missed: statement clobbers memory: __builtin_va_end (&args);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1132:5: missed: statement clobbers memory: outputChars (current_8(D), &buf, n_5);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1144:9: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1144:9: missed: statement clobbers memory: outputFormatted (current_7(D), "%d%c", _3, 59);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1142:5: missed: statement clobbers memory: outputChars (current_7(D), "\x1b[", -1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1144:9: missed: statement clobbers memory: outputFormatted (current_7(D), "%d%c", _3, 59);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1144:9: missed: statement clobbers memory: outputFormatted (current_7(D), "%d%c", _22, 109);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1643:29: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1643:29: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1629:22: missed: statement clobbers memory: hint_34 = hintsCallback.60_2 (buf_32(D), &color, &bold, hintsUserdata.62_4);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1637:21: missed: statement clobbers memory: setOutputHighlight (current_40(D), &props, 3);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1643:29: missed: statement clobbers memory: n_44 = utf8_tounicode (pt_66, &ch);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1644:33: missed: statement clobbers memory: width_46 = char_display_width (ch.69_10);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1653:21: missed: statement clobbers memory: outputChars (current_40(D), pt_66, n_44);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1402:5: missed: statement clobbers memory: setOutputHighlight (current_40(D), &nohighlight, 1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1660:40: missed: statement clobbers memory: freeHintsCallback.72_15 (hint_34, hintsUserdata.74_16);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1284:9: missed: statement clobbers memory: _1 = ioctl (1, 21523, &ws);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1311:13: missed: statement clobbers memory: _5 = queryCursor (current_14(D), &here);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1160:9: missed: statement clobbers memory: outputFormatted (current_14(D), "\r\x1b[%dC", 999);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1319:17: missed: statement clobbers memory: _7 = queryCursor (current_14(D), _6);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1137:5: missed: statement clobbers memory: outputChars (current_14(D), "\r", -1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1160:9: missed: statement clobbers memory: outputFormatted (current_14(D), "\r\x1b[%dC", here.14_9);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1835:17: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1835:17: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1569:17: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1569:17: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1580:38: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1580:38: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1758:11: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1758:11: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1739:5: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1739:5: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1717:5: missed: statement clobbers memory: getWindowSize (current_84(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1671:5: missed: statement clobbers memory: __assert_fail ("current->output == NULL", "/home/lsandov1/repos/jsource/jsrc/linenoise.c", 1671, &__PRETTY_FUNCTION__);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1672:23: missed: statement clobbers memory: _142 = sb_alloc ();
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1174:9: missed: statement clobbers memory: outputFormatted (current_84(D), "\x1b[%dB", _4);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1167:9: missed: statement clobbers memory: outputFormatted (current_84(D), "\x1b[%dA", 1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1137:5: missed: statement clobbers memory: outputChars (current_84(D), "\r", -1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1151:5: missed: statement clobbers memory: outputChars (current_84(D), "\x1b[0K", -1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1761:17: missed: statement clobbers memory: n_122 = utf8_tounicode (pt_86, &ch);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1690:5: missed: statement clobbers memory: outputChars (current_84(D), "\n", 1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1777:31: missed: statement clobbers memory: _11 = utf8_width (ch.45_271);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1690:5: missed: statement clobbers memory: outputChars (current_84(D), "\n", 1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1795:13: missed: statement clobbers memory: outputChars (current_84(D), pt_86, n_122);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1801:21: missed: statement clobbers memory: _15 = parseEscapeSequence (&parser, ch.47_14);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1804:21: missed: statement clobbers memory: setOutputHighlight (current_84(D), &parser.props, _16);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1569:17: missed: statement clobbers memory: n_145 = utf8_tounicode (pt_250, &ch);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1572:21: missed: statement clobbers memory: _149 = char_display_width (ch.56_148);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1581:17: missed: statement clobbers memory: n_153 = utf8_tounicode (buf_152, &ch);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1583:25: missed: statement clobbers memory: _157 = char_display_width (ch.57_156);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1835:17: missed: statement clobbers memory: n_93 = utf8_tounicode (pt_87, &ch);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1836:21: missed: statement clobbers memory: width_95 = char_display_width (ch.49_21);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1690:5: missed: statement clobbers memory: outputChars (current_84(D), "\n", 1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1408:5: missed: statement clobbers memory: setOutputHighlight (current_84(D), &reverse, 1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1409:5: missed: statement clobbers memory: outputChars (current_84(D), "^", 1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1410:5: missed: statement clobbers memory: outputChars (current_84(D), &ch, 1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1402:5: missed: statement clobbers memory: setOutputHighlight (current_84(D), &nohighlight, 1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1869:13: missed: statement clobbers memory: outputChars (current_84(D), pt_87, n_93);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1890:12: missed: statement clobbers memory: hint_110 = refreshShowHints (current_84(D), buf_89(D), _34, 1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1167:9: missed: statement clobbers memory: outputFormatted (current_84(D), "\x1b[%dA", _38);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1137:5: missed: statement clobbers memory: outputChars (current_84(D), "\r", -1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1160:9: missed: statement clobbers memory: outputFormatted (current_84(D), "\r\x1b[%dC", cursorcol_262);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1678:5: missed: statement clobbers memory: write (_179, _178, _177);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1679:5: missed: statement clobbers memory: sb_free (_180);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1890:12: missed: statement clobbers memory: hint_54 = refreshShowHints (current_84(D), buf_89(D), _61, 1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1926:5: missed: statement clobbers memory: refreshLineAlt (current_5(D), _3, _6, _1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2459:17: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2459:17: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2455:21: missed: statement clobbers memory: sb_13 = sb_alloc ();
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2471:9: missed: statement clobbers memory: sb_append_len (sb_13, &ch, 1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2459:17: missed: statement clobbers memory: c_16 = getc (fh_14(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2474:9: missed: statement clobbers memory: sb_free (sb_13);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:568:10: missed: statement clobbers memory: _8 = strdup ("");
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:574:3: missed: statement clobbers memory: free (sb_5(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:627:3: missed: statement clobbers memory: sb_append (sb_11(D), str_13(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:630:18: missed: statement clobbers memory: _2 = strlen (str_13(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:592:3: missed: statement clobbers memory: sb_realloc (sb_11(D), _24);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:595:2: missed: statement clobbers memory: memmove (_33, _30, _27);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:633:3: missed: statement clobbers memory: memcpy (_6, str_13(D), _31);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:635:16: missed: statement clobbers memory: _18 = utf8_strlen (str_13(D), len_14);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2003:22: missed: statement clobbers memory: offset_27 = utf8_index (_32, pos_21(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1418:12: missed: statement clobbers memory: _44 = utf8_fromunicode (&buf, c.86_43);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2016:25: missed: statement clobbers memory: width_34 = char_display_width (ch_28(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2024:9: missed: statement clobbers memory: sb_insert (_47, offset_27, &buf);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2029:17: missed: statement clobbers memory: _13 = refreshShowHints (current_23(D), _24, _11, 0);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2035:17: missed: statement clobbers memory: outputChars (current_23(D), &buf, _44);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2024:9: missed: statement clobbers memory: sb_insert (_53, offset_27, &buf);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:609:2: missed: statement clobbers memory: __assert_fail ("pos + len <= sb->last", "/home/lsandov1/repos/jsource/jsrc/linenoise.c", 609, &__PRETTY_FUNCTION__);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:612:15: missed: statement clobbers memory: _19 = utf8_strlen (pos_11, len_6);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:616:2: missed: statement clobbers memory: memmove (_30, _29, _25);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1945:22: missed: statement clobbers memory: offset_32 = utf8_index (_36, pos_26(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1946:22: missed: statement clobbers memory: nbytes_35 = utf8_index (_4, 1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1972:9: missed: statement clobbers memory: sb_delete (_53, offset_32, nbytes_35);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1978:17: missed: statement clobbers memory: _18 = refreshShowHints (current_28(D), _29, _16, 0);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1984:17: missed: statement clobbers memory: outputChars (current_28(D), "\b \b", 3);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1972:9: missed: statement clobbers memory: sb_delete (_59, offset_32, nbytes_35);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1931:5: missed: statement clobbers memory: sb_clear (_1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1932:5: missed: statement clobbers memory: sb_append (_2, str_7(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2078:19: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2078:19: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2051:22: missed: statement clobbers memory: offset_19 = utf8_index (_18, pos_8(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2052:22: missed: statement clobbers memory: nbytes_24 = utf8_index (_23, n_9(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2056:17: missed: statement clobbers memory: sb_clear (_25);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2059:36: missed: statement clobbers memory: _26 = sb_alloc ();
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2061:13: missed: statement clobbers memory: sb_append_len (_30, _29, nbytes_24);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2078:19: missed: statement clobbers memory: _1 = remove_char (current_7(D), pos_8(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:888:9: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:889:13: missed: statement clobbers memory: free (_5);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:889:13: missed: statement clobbers memory: free (_5);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:890:9: missed: statement clobbers memory: free (history.8_1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1092:9: missed: statement clobbers memory: tcsetattr (0, 1, &orig_termios);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1094:5: missed: statement clobbers memory: linenoiseHistoryFree ();
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1180:5: missed: statement clobbers memory: write (1, "\x1b[H\x1b[2J", 7);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1536:25: missed: statement clobbers memory: _5 = realloc (_4, _3);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1537:27: missed: statement clobbers memory: _10 = strdup (str_16(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2439:5: missed: statement clobbers memory: enableRawMode (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2440:5: missed: statement clobbers memory: getWindowSize (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2441:5: missed: statement clobbers memory: disableRawMode (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2519:9: missed: statement clobbers memory: free (line_34(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2523:28: missed: statement clobbers memory: _4 = calloc (8, _3);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2527:28: missed: statement clobbers memory: _12 = strcmp (line_34(D), _11);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2532:9: missed: statement clobbers memory: free (_14);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2533:9: missed: statement clobbers memory: memmove (history.97_13, _18, _17);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2542:12: missed: statement clobbers memory: _1 = strdup (line_3(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2542:12: missed: statement clobbers memory: _6 = linenoiseHistoryAddAllocated (_1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2224:17: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2224:17: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2094:17: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2094:17: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2310:23: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2310:23: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2305:23: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2305:23: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2156:17: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2156:17: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2176:31: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2176:31: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1469:5: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1469:5: missed: not vectorized: number of iterations cannot be computed.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1486:23: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1486:23: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2486:5: missed: statement clobbers memory: memset (&current, 0, 64);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2488:9: missed: statement clobbers memory: _1 = enableRawMode (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2489:9: missed: statement clobbers memory: printf ("%s", prompt_18(D));
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2490:9: missed: statement clobbers memory: fflush (stdout.20_2);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2491:14: missed: statement clobbers memory: sb_30 = sb_getline (stdin.21_3);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2494:23: missed: statement clobbers memory: _4 = sb_alloc ();
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2217:5: missed: statement clobbers memory: linenoiseHistoryAdd ("");
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2219:5: missed: statement clobbers memory: set_current (&current, "");
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2220:5: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2224:17: missed: statement clobbers memory: c_34 = fd_read (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1478:5: missed: statement clobbers memory: completionCallback.23_38 (_157, &lc, completionUserdata.43_155);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1480:9: missed: statement clobbers memory: beep ();
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1487:29: missed: statement clobbers memory: chars_165 = utf8_strlen (_164, -1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1488:17: missed: statement clobbers memory: refreshLineAlt (&current, _169, _168, chars_165);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1490:17: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1493:17: missed: statement clobbers memory: c_170 = fd_read (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1501:38: missed: statement clobbers memory: beep ();
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1506:25: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1513:25: missed: statement clobbers memory: set_current (&current, _180);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1470:9: missed: statement clobbers memory: free (_191);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1471:5: missed: statement clobbers memory: free (_194);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2125:9: missed: statement clobbers memory: snprintf (&rprompt, 80, "(reverse-i-search)\'%s\': ", &rbuf);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2126:9: missed: statement clobbers memory: refreshLineAlt (&current, &rprompt, _199, _197);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2127:13: missed: statement clobbers memory: c_200 = fd_read (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2130:25: missed: statement clobbers memory: p_206 = utf8_index (&rbuf, rchars_205);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2132:29: missed: statement clobbers memory: _207 = strlen (&rbuf);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2138:17: missed: statement clobbers memory: c_210 = check_special (_209);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:1418:12: missed: statement clobbers memory: _274 = utf8_fromunicode (_224, c.86_273);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2177:17: missed: statement clobbers memory: p_236 = strstr (_235, &rbuf);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2180:33: missed: statement clobbers memory: _240 = strcmp (_235, _239);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2185:17: missed: statement clobbers memory: set_current (&current, _420);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2186:32: missed: statement clobbers memory: _246 = utf8_strlen (_243, _245);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2199:9: missed: statement clobbers memory: set_current (&current, "");
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2208:5: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2242:17: missed: statement clobbers memory: c_44 = check_special (_43);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2255:13: missed: statement clobbers memory: free (_54);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2259:17: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2270:13: missed: statement clobbers memory: disableRawMode (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2271:13: missed: statement clobbers memory: raise (20);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2273:13: missed: statement clobbers memory: enableRawMode (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2274:13: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2279:17: missed: statement clobbers memory: _63 = remove_char (&current, _62);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2280:17: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2287:17: missed: statement clobbers memory: free (_72);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2501:9: missed: statement clobbers memory: disableRawMode (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2502:9: missed: statement clobbers memory: __builtin_putchar (10);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2504:9: missed: statement clobbers memory: sb_free (_427);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2292:17: missed: statement clobbers memory: _74 = remove_char (&current, _73);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2293:17: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2305:35: missed: statement clobbers memory: _78 = get_char (&current, _77);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2310:35: missed: statement clobbers memory: _81 = get_char (&current, _80);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2314:21: missed: statement clobbers memory: _84 = remove_chars (&current, pos_444, _83);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2315:21: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2323:21: missed: statement clobbers memory: c_91 = get_char (&current, _90);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2324:17: missed: statement clobbers memory: remove_char (&current, _93);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2325:17: missed: statement clobbers memory: insert_char (&current, _95, c_91);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2326:17: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2331:17: missed: statement clobbers memory: _97 = insert_char (&current, _96, 22);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2332:17: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2334:21: missed: statement clobbers memory: c_98 = fd_read (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2337:17: missed: statement clobbers memory: remove_char (&current, _100);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2340:21: missed: statement clobbers memory: insert_char (&current, _101, c_98);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2342:17: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2349:17: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2356:17: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2375:17: missed: statement clobbers memory: free (_120);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2376:60: missed: statement clobbers memory: _123 = strdup (_122);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2386:17: missed: statement clobbers memory: set_current (&current, _132);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2387:17: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2393:13: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2398:13: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2401:17: missed: statement clobbers memory: _136 = remove_chars (&current, 0, _135);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2402:17: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2406:17: missed: statement clobbers memory: _141 = remove_chars (&current, _139, _140);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2407:17: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2094:17: missed: statement clobbers memory: n_276 = utf8_tounicode (chars_412, &ch);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2095:13: missed: statement clobbers memory: _279 = insert_char (&current, pos_413, ch.88_277);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2412:17: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2416:13: missed: statement clobbers memory: linenoiseClearScreen ();
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2420:13: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2425:21: missed: statement clobbers memory: _150 = insert_char (&current, _149, c_45);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2426:21: missed: statement clobbers memory: refreshLine (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2501:9: missed: statement clobbers memory: disableRawMode (&current);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2502:9: missed: statement clobbers memory: __builtin_putchar (10);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2504:9: missed: statement clobbers memory: sb_free (_5);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2506:13: missed: statement clobbers memory: sb_free (_6);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2511:17: missed: statement clobbers memory: iftmp.22_32 = sb_to_string (sb_7);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2562:13: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2562:46: missed: statement clobbers memory: free (_6);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2556:31: missed: statement clobbers memory: newHistory_26 = calloc (8, _2);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2562:46: missed: statement clobbers memory: free (_6);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2565:9: missed: statement clobbers memory: memcpy (newHistory_26, _13, _9);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2566:9: missed: statement clobbers memory: free (history.105_1);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2582:5: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2582:5: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2585:15: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2585:15: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2578:16: missed: statement clobbers memory: fp_18 = fopen (filename_16(D), "w");
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2587:17: missed: statement clobbers memory: __builtin_fwrite ("\\\\", 1, 2, fp_18);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2590:17: missed: statement clobbers memory: __builtin_fwrite ("\\n", 1, 2, fp_18);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2593:17: missed: statement clobbers memory: __builtin_fwrite ("\\r", 1, 2, fp_18);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2596:17: missed: statement clobbers memory: fputc (_5, fp_18);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2600:9: missed: statement clobbers memory: fputc (10, fp_18);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2603:5: missed: statement clobbers memory: fclose (fp_18);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2619:11: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2619:11: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2625:9: missed: couldn't vectorize loop
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2625:9: missed: not vectorized: control flow in loop.
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2614:16: missed: statement clobbers memory: fp_14 = fopen (filename_12(D), "r");
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2621:21: missed: statement clobbers memory: buf_19 = sb_to_string (sb_16);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2643:9: missed: statement clobbers memory: linenoiseHistoryAddAllocated (buf_19);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2619:18: missed: statement clobbers memory: sb_16 = sb_getline (fp_14);
+/home/lsandov1/repos/jsource/jsrc/linenoise.c:2645:5: missed: statement clobbers memory: fclose (fp_14);
+gcc  jconsole.o jeload.o linenoise.o    -ldl -o jconsole 
