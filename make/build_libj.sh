@@ -2,29 +2,12 @@
 # $1 is j32 or j64
 cd ~
 
+source $jmake/common.sh
+
 # gcc 5 vs 4 - killing off linux asm routines (overflow detection)
 # new fast code uses builtins not available in gcc 4
 # use -DC_NOMULTINTRINSIC to continue to use more standard c in version 4
 # too early to move main linux release package to gcc 5
-
-macmin="-mmacosx-version-min=10.6"
-
-if [ "x$CC" = x'' ] ; then
-if [ -f "/usr/bin/cc" ]; then
-CC=cc
-else
-if [ -f "/usr/bin/clang" ]; then
-CC=clang
-else
-CC=gcc
-fi
-fi
-export CC
-fi
-# compiler=`$CC --version | head -n 1`
-compiler=`readlink -f $(command -v $CC)`
-echo "CC=$CC"
-echo "compiler=$compiler"
 
 USE_OPENMP="${USE_OPENMP:=0}"
 if [ $USE_OPENMP -eq 1 ] ; then
@@ -36,30 +19,6 @@ else
 LDOPENMP32=" -l:libomp.so.5 "     # clang
 fi
 fi
-
-if [ -z "${compiler##*gcc*}" ] || [ -z "${CC##*gcc*}" ]; then
-# gcc
-common="$OPENMP -fPIC -O1 -fwrapv -fno-strict-aliasing -Wextra -Wno-maybe-uninitialized -Wno-unused-parameter -Wno-sign-compare -Wno-clobbered -Wno-empty-body -Wno-unused-value -Wno-pointer-sign -Wno-parentheses"
-OVER_GCC_VER6=$(echo `$CC -dumpversion | cut -f1 -d.` \>= 6 | bc)
-if [ $OVER_GCC_VER6 -eq 1 ] ; then
-common="$common -Wno-shift-negative-value"
-else
-common="$common -Wno-type-limits"
-fi
-# alternatively, add comment /* fall through */
-OVER_GCC_VER7=$(echo `$CC -dumpversion | cut -f1 -d.` \>= 7 | bc)
-if [ $OVER_GCC_VER7 -eq 1 ] ; then
-common="$common -Wno-implicit-fallthrough"
-fi
-OVER_GCC_VER8=$(echo `$CC -dumpversion | cut -f1 -d.` \>= 8 | bc)
-if [ $OVER_GCC_VER8 -eq 1 ] ; then
-common="$common -Wno-cast-function-type"
-fi
-else
-# clang 3.5 .. 5.0
-common="$OPENMP -Werror -fPIC -O1 -fwrapv -fno-strict-aliasing -Wextra -Wno-consumed -Wno-uninitialized -Wno-unused-parameter -Wno-sign-compare -Wno-empty-body -Wno-unused-value -Wno-pointer-sign -Wno-parentheses -Wno-unsequenced -Wno-string-plus-int -Wno-pass-failed"
-fi
-darwin="$OPENMP -fPIC -O1 -fwrapv -fno-strict-aliasing -Wno-string-plus-int -Wno-empty-body -Wno-unsequenced -Wno-unused-value -Wno-pointer-sign -Wno-parentheses -Wno-return-type -Wno-constant-logical-operand -Wno-comment -Wno-unsequenced -Wno-pass-failed"
 
 javx2="${javx2:=0}"
 
